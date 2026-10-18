@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORE ON CSS SELECTORS</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+
+        } */
+        /* .box ::first-line{
+            color: green;
+        } */
+         /* .boxes *{
+            color: blue;
+            border:2px solid black;
+
+         } */
+         /* p,a,.box,[data-color="primary"]{
+            /* margin-top: 45px; */
+            /* padding-top: 45px;} */
+         
+         .boxes::before{
+            content: "i am your father";
+            color: green;
+         } 
+          .boxes::after{
+            /* content: "i am your mummy"; */
+            color: purple;
+         }
+         ::selection{
+            color: aqua;
+         }
+         .box::first-letter{
+            color: orange;
+            font-size: 45px;
+         }
+         input::placeholder{
+            color: rgb(0, 255, 174);
+            /* font-size: ; */
+         }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">I am a first box</div>
+        <div class="box">Hey i am a box</div>
+        <div class="box">Hey i am a box</div>
+        <input type="text" placeholder="Type your name">
+
+    </div>
+    
+</body>
+</html>

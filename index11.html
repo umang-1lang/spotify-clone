@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* element selector */
+        div {
+            /* background-color: red; */
+        }
+
+        /* class selector */
+        .red {
+            background-color: blue;
+        }
+
+        /* id selector */
+        #green {
+            background-color: red;
+
+        }
+
+        /* child selectors */
+        div > p {
+            color: blue;
+            background-color: brown;
+        }
+        /* descendent selector */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: red;
+        }
+        a:link{
+            color: green;
+        }
+        a:hover{
+            background-color: yellow;
+        }
+
+
+    </style>
+</head>
+
+<body>
+   
+    <div class="red">
+        i am UMANG
+        <p>
+            i love fucking chicks
+        </p>
+    </div>
+    <div id="green">
+        i am your father
+    </div>
+    <a href="https://www.google.com">go to google</a>
+    <a href="https://www.facebook.com">go to facebook</a>
+
+</body>
+
+</html>
